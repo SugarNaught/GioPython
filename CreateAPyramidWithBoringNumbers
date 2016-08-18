@@ -1,0 +1,7 @@
+number = int(input('input number --> '))
+number2 = number - (number - 1)
+for i in range(number):
+    print(number2*'x')
+    number2 = number2 + 1
+    if number2 > number:
+        break
