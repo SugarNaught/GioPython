@@ -1,0 +1,7 @@
+print("this is the drunk-o-meter, type the next sentence twice to determine whether you're sober or not!")
+x=input("sissy snakes steal from sassy snakes their sweet candy\n")
+y=input("")
+if x==y:
+    print("congratulations! you're sober!")
+else:
+    print("lol u drunk man")
