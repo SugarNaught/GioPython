@@ -1,0 +1,7 @@
+Items = ['Coke', 'Sprite', 'Ice lemon tea', 'granola bar', 'chocolate bar']
+
+dolla=int(input("please insert money\n"))
+Item=int(input("Now select what product you want\n0. Coke\n1. Sprite\n2. Ice Lemon Tea\n3. Granola bar\n4. Chocolate bar\n"))
+print('item selected is',Items[Item])
+change=dolla-5
+print('your change is', change)
