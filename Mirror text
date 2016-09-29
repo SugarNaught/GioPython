@@ -1,0 +1,2 @@
+Word=input("welcome to th joke shop! say something!!")
+print (Word[::-1])
