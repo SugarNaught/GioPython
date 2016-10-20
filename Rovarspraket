@@ -1,0 +1,21 @@
+current = 0
+vowels = ['a','e','i','o','u','y']
+Nword = ()
+characters = []
+count = 0
+word=input('insert a word')
+characters = list(word)
+length = len(characters)
+
+while count < length:
+    current = characters[count]
+    if current in vowels:
+        print(current)
+        count=count+1
+    else:
+        Nletter = (current,"o",current)
+        print(Nletter)
+        Nword += Nletter
+        count=count+1
+
+print (Nword[0::])
