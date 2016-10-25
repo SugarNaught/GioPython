@@ -1,0 +1,13 @@
+import random
+Events=["yes", "no", "maybe yes", "maybe no", "without a doubt", "most certainly", "ask again later", "can't tell you now", "very doubtful", "don't count on it"]
+end=0
+Q=input('ask a yes or no question \n')
+while end==0:
+    if Q==("g"):
+        print("lol")
+    else:
+        print (random.choice(Events))
+    result=input("end session?, if not, ask another question \n")
+    if result==("yes"):
+        end=end+1
+
