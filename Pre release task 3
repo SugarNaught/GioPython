@@ -1,0 +1,13 @@
+word = input("input a string")
+NewWord=(word.split())
+
+if len(NewWord)<=10:
+    while len(NewWord)<10:
+        NewWord.append("EMPTY")
+
+    for i in NewWord:
+        print(i)
+
+else:
+    print("more than list can store, input denied")
+
