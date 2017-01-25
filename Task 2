@@ -1,0 +1,29 @@
+TASK 2
+
+(1)	Number <-- 0
+		WHILE Number < 101
+			Number <-- Number + 1
+			OUTPUT Number
+		ENDWHILE
+
+	(2)	Number <-- 0
+		REPEAT
+			Number <-- Number + 1
+			OUTPUT Number
+		UNTIL Number = 100
+
+
+TASK 2.2
+
+	INPUT Start_Val
+	INPUT End_Val
+
+	REPEAT
+		Num <-- End_Val
+		Temp <-- MOD(Num, 3)
+		IF Temp > 0
+			PASS
+		ELIF Temp = 0
+			OUTPUT Num
+		Num <-- Num - 1
+	UNTIL Num = Start_Val
