@@ -1,0 +1,16 @@
+print("welcome to the sports database")
+
+class guy:
+    def __init__(self):
+        self.id = ""
+        self.date = 0
+
+    def number_of_lines():
+        with open('Sport text') as S:
+            return len(list(S))-2
+
+    def add_line(self):
+        lineadd=("%d,%s") % (number_of_lines()+1, self.id, self.date)
+        print (lineadd)
+        with open("Sport text") as S:
+            S.write("\n"+lineadd)
