@@ -1,0 +1,23 @@
+list=[]
+
+for i in range(5):
+    X=int(input("insert a number \n"))
+    list.append(X)
+
+
+def shortBubbleSort(list):
+    exchanges = True
+    passnum = len(list)-1
+    while passnum > 0 and exchanges:
+       exchanges = False
+       for i in range(passnum):
+           if list[i]>list[i+1]:
+               exchanges = True
+               Y = list[i]
+               list[i] = list[i+1]
+               list[i+1] = Y
+       passnum = passnum-1
+
+
+shortBubbleSort(list)
+print(list)
