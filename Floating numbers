@@ -1,0 +1,38 @@
+number=(int(input("insert a number defining it's sign\n")))
+counter=0
+X=0
+Binary=[]
+
+Fx=0
+
+def Negative():
+
+def FractionB():
+    while Fx=0
+        StringFraction=""
+        if Fraction*2=1:
+            StringFraction.append("1")
+            global Fx
+            Fx=Fx+1
+        else:
+            String.append('0')
+
+
+    Fraction*2
+
+
+def FloatConverter():
+    numberB=(bin(number))
+    Binary.append(list(numberB))
+    print(Binary)
+
+    if Binary[X]="-":
+
+
+while counter==0:
+    fraction=int(input("insert the fraction using base 2   1/"))
+    if fraction%2==0:
+        counter=counter+1
+        FloatConverter()
+    else:
+        print("fraction isn't in base 2")
