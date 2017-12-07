@@ -1,0 +1,34 @@
+class Taxi:
+    def __init__(self, Registration, Fare, MaxPassengers):
+        self.Registration = Registration
+        self.Passengers = 0
+        self.Fare = Fare
+        self.Charge = 0
+        self.MaxPassengers = MaxPassengers
+
+    def AddPassengers(self,num):
+        if self.Passengers + num <= self.MaxPassengers:
+            self.Passengers += num
+        else:
+            print("Unable to add passengers")
+
+class Car(Taxi):
+    def __init__(self,Registration,Fare):
+        super().__init__(Registration,Fare,4)
+
+    def __str__(self):
+        return "This taxi is a car and has {0} passengers and charges ${1} per minute".format(self.Passengers,self.Fare)
+
+    def CalculateCarFare(self,Time):
+        self.Charge += Time * self.Fare
+
+class Minibus(Taxi):
+    def __init__(self,Registration,Fare, BookingCharge, MaxPassengers):
+        super().__init__(Registration,Fare,MaxPassengers)
+        self.BookingCharge = BookingCharge
+
+    def __str__(self):
+        return "This taxi is a minibus and has {0} passengers and charges ${1} per minute with a ${2} booking fee".format(self.Passengers,self.Fare,self.BookingCharge)
+
+    def CalculateBusFare(self,Time):
+        self.Charge += Time * self.Fare + self.BookingCharge
